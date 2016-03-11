@@ -8,6 +8,7 @@
 
 #import "BVSLeftSideDrawerViewController.h"
 #import "BVSLeftSideDrawerTopView.h"
+#import <Masonry.h>
 
 @interface BVSLeftSideDrawerViewController () <UITableViewDataSource>
 
@@ -28,10 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:243.0/255.0
-                                                green:243.0/255.0
-                                                 blue:243.0/255.0
-                                                alpha:1.0];
+    self.view.backgroundColor = kBVSThemeColor;
     
     [self setupTopView];
     [self setupTableView];
@@ -42,7 +40,7 @@
     _topView = [[BVSLeftSideDrawerTopView alloc] initWithFrame:CGRectMake(0, 64, 280, 50)];
     [self.view addSubview:_topView];
     _topView.titleLabel.text = @"ver 1.0.0 2016-3-6";
-    _topView.backgroundColor = [UIColor clearColor];
+    _topView.backgroundColor = kBVSLeftTitleColor;
 }
 
 - (void)setupTableView {
@@ -50,13 +48,22 @@
     [self.view addSubview:_tableView];
     _tableView.dataSource = self;
     _tableView.tableFooterView = [[UIView alloc] init];
-    _tableView.backgroundColor = kBVSThemeColor;
+    _tableView.backgroundColor = [UIColor clearColor];
     [_tableView setSeparatorColor:kBVSLeftSeparatorColor];
+    
+    //  图案
+    UIImage *pattern_down = [UIImage imageNamed:@"polygon_down"];
+    UIImageView *bottomPatternView = [[UIImageView alloc] initWithImage:pattern_down];
+    bottomPatternView.frame = CGRectMake((280-bottomPatternView.frame.size.width), (ScreenH-bottomPatternView.frame.size.height), bottomPatternView.frame.size.width, bottomPatternView.frame.size.height);
+    [self.view addSubview:bottomPatternView];
 }
 
 - (void)setupNavigationBar {
     UINavigationBar *bar = self.navigationController.navigationBar;
-    bar.barTintColor = kBVSLeftBackgroundColor;
+    bar.backgroundColor = kBVSLeftTitleColor;
+    UIView *statusBackground = [[UIView alloc] initWithFrame:CGRectMake(0, -20, 280, 20)];
+    statusBackground.backgroundColor = kBVSLeftTitleColor;
+    [bar addSubview:statusBackground];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
