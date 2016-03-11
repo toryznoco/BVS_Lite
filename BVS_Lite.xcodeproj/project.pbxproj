@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9A1C6D151C8C27A500BFD95A /* BVSCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1C6D0E1C8C27A500BFD95A /* BVSCenterViewController.m */; };
-		9A1C6D161C8C27A500BFD95A /* BVSLeftSideDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1C6D101C8C27A500BFD95A /* BVSLeftSideDrawerTableViewController.m */; };
 		9A1C6D171C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1C6D121C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m */; };
 		9A1C6D1A1C8C325E00BFD95A /* BVSHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1C6D191C8C325E00BFD95A /* BVSHomeTopView.m */; };
-		9A4EC0161C907F6A00245CA9 /* BVSLeftSideDrawerTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EC0151C907F6A00245CA9 /* BVSLeftSideDrawerTableHeaderView.m */; };
+		9A4EC01C1C91030800245CA9 /* BVSLeftSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EC01B1C91030800245CA9 /* BVSLeftSideDrawerViewController.m */; };
+		9A4EC01F1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EC01E1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m */; };
 		9AD21C461C87286F0003248A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD21C451C87286F0003248A /* main.m */; };
 		9AD21C511C87286F0003248A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD21C501C87286F0003248A /* Assets.xcassets */; };
 		9AD21C541C87286F0003248A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD21C521C87286F0003248A /* LaunchScreen.storyboard */; };
@@ -46,14 +46,15 @@
 		94A38CCB0401E68BEB117D9C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A1C6D0D1C8C27A500BFD95A /* BVSCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSCenterViewController.h; sourceTree = "<group>"; };
 		9A1C6D0E1C8C27A500BFD95A /* BVSCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSCenterViewController.m; sourceTree = "<group>"; };
-		9A1C6D0F1C8C27A500BFD95A /* BVSLeftSideDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerTableViewController.h; sourceTree = "<group>"; };
-		9A1C6D101C8C27A500BFD95A /* BVSLeftSideDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSLeftSideDrawerTableViewController.m; sourceTree = "<group>"; };
 		9A1C6D111C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSRightSideDrawerTableViewController.h; sourceTree = "<group>"; };
 		9A1C6D121C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSRightSideDrawerTableViewController.m; sourceTree = "<group>"; };
 		9A1C6D181C8C325E00BFD95A /* BVSHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSHomeTopView.h; sourceTree = "<group>"; };
 		9A1C6D191C8C325E00BFD95A /* BVSHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSHomeTopView.m; sourceTree = "<group>"; };
-		9A4EC0141C907F6A00245CA9 /* BVSLeftSideDrawerTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerTableHeaderView.h; sourceTree = "<group>"; };
-		9A4EC0151C907F6A00245CA9 /* BVSLeftSideDrawerTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSLeftSideDrawerTableHeaderView.m; sourceTree = "<group>"; };
+		9A32DF681C9271DD00BE0331 /* BVS_Lite.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVS_Lite.pch; sourceTree = "<group>"; };
+		9A4EC01A1C91030800245CA9 /* BVSLeftSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerViewController.h; sourceTree = "<group>"; };
+		9A4EC01B1C91030800245CA9 /* BVSLeftSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSLeftSideDrawerViewController.m; sourceTree = "<group>"; };
+		9A4EC01D1C91037B00245CA9 /* BVSLeftSideDrawerTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerTopView.h; sourceTree = "<group>"; };
+		9A4EC01E1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSLeftSideDrawerTopView.m; sourceTree = "<group>"; };
 		9AD21C411C87286F0003248A /* BVS_Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BVS_Lite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD21C451C87286F0003248A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AD21C501C87286F0003248A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,10 +124,10 @@
 			children = (
 				9A1C6D0D1C8C27A500BFD95A /* BVSCenterViewController.h */,
 				9A1C6D0E1C8C27A500BFD95A /* BVSCenterViewController.m */,
-				9A1C6D0F1C8C27A500BFD95A /* BVSLeftSideDrawerTableViewController.h */,
-				9A1C6D101C8C27A500BFD95A /* BVSLeftSideDrawerTableViewController.m */,
 				9A1C6D111C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.h */,
 				9A1C6D121C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m */,
+				9A4EC01A1C91030800245CA9 /* BVSLeftSideDrawerViewController.h */,
+				9A4EC01B1C91030800245CA9 /* BVSLeftSideDrawerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,8 +144,8 @@
 			children = (
 				9A1C6D181C8C325E00BFD95A /* BVSHomeTopView.h */,
 				9A1C6D191C8C325E00BFD95A /* BVSHomeTopView.m */,
-				9A4EC0141C907F6A00245CA9 /* BVSLeftSideDrawerTableHeaderView.h */,
-				9A4EC0151C907F6A00245CA9 /* BVSLeftSideDrawerTableHeaderView.m */,
+				9A4EC01D1C91037B00245CA9 /* BVSLeftSideDrawerTopView.h */,
+				9A4EC01E1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +259,7 @@
 			children = (
 				9AD21C7D1C8850670003248A /* AppDelegate.h */,
 				9AD21C7E1C8850670003248A /* AppDelegate.m */,
+				9A32DF681C9271DD00BE0331 /* BVS_Lite.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -465,11 +467,11 @@
 				9AD21C7F1C8850670003248A /* AppDelegate.m in Sources */,
 				9AD21C921C88751E0003248A /* BVSDrawerVisualStateManager.m in Sources */,
 				9AD21C461C87286F0003248A /* main.m in Sources */,
-				9A4EC0161C907F6A00245CA9 /* BVSLeftSideDrawerTableHeaderView.m in Sources */,
 				9A1C6D171C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m in Sources */,
-				9A1C6D161C8C27A500BFD95A /* BVSLeftSideDrawerTableViewController.m in Sources */,
+				9A4EC01C1C91030800245CA9 /* BVSLeftSideDrawerViewController.m in Sources */,
 				9A1C6D1A1C8C325E00BFD95A /* BVSHomeTopView.m in Sources */,
 				9AD21C8E1C8865EB0003248A /* TRNavigationController.m in Sources */,
+				9A4EC01F1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m in Sources */,
 				9A1C6D151C8C27A500BFD95A /* BVSCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +604,8 @@
 			baseConfigurationReference = 74B1C0FA6310F60F78E3A7A5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BVS_Lite//Classes/Other/BVS_Lite.pch";
 				INFOPLIST_FILE = BVS_Lite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -615,6 +619,8 @@
 			baseConfigurationReference = 94A38CCB0401E68BEB117D9C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BVS_Lite//Classes/Other/BVS_Lite.pch";
 				INFOPLIST_FILE = BVS_Lite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <MMDrawerController.h>
 #import "BVSCenterViewController.h"
-#import "BVSLeftSideDrawerTableViewController.h"
+#import "BVSLeftSideDrawerViewController.h"
 #import "BVSRightSideDrawerTableViewController.h"
 #import "TRNavigationController.h"
 #import "MMDrawerVisualState.h"
@@ -26,18 +26,21 @@
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIViewController *leftSideDrawerViewController = [[BVSLeftSideDrawerTableViewController alloc] init];
+    BVSLeftSideDrawerViewController *leftSideDrawerViewController = [[BVSLeftSideDrawerViewController alloc] init];
     
-    UIViewController *centerViewController = [[BVSCenterViewController alloc] init];
+    BVSCenterViewController *centerViewController = [[BVSCenterViewController alloc] init];
     
-    UIViewController *rightSideDrawerViewController = [[BVSRightSideDrawerTableViewController alloc] init];
+    BVSRightSideDrawerTableViewController *rightSideDrawerViewController = [[BVSRightSideDrawerTableViewController alloc] init];
     
     UINavigationController *navigationController = [[TRNavigationController alloc] initWithRootViewController:centerViewController];
     [navigationController setRestorationIdentifier:@"BVSCenterNavigationControllerRestorationKey"];
+    
     UINavigationController *leftSideNavController = [[TRNavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
     [leftSideNavController setRestorationIdentifier:@"BVSLeftNavigationControllerRestorationKey"];
+    
     UINavigationController *rightSideNavController = [[TRNavigationController alloc] initWithRootViewController:rightSideDrawerViewController];
     [rightSideNavController setRestorationIdentifier:@"BVSRightNavigationControllerRestorationKey"];
+    
     self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:navigationController
                                                             leftDrawerViewController:leftSideNavController
                                                            rightDrawerViewController:rightSideNavController];

@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+//  宽高
+
+//  字体
+#define kBVSTopViewFontSize 17      // 字体大小
+
+
 @interface BVSHomeTopView : UIView
+
 @property (nonatomic, strong) UILabel *idLabel;
 @property (nonatomic, strong) UILabel *birthLabel;
 @property (nonatomic, strong) UILabel *nameLabel;
 @property (nonatomic, strong) UILabel *genderLabel;
+
 @end

@@ -28,10 +28,7 @@
     // Do any additional setup after loading the view.
     
     UINavigationBar *bar = [UINavigationBar appearance];
-    bar.barTintColor = [UIColor colorWithRed:33.0/255.0
-                                       green:202.0/255.0
-                                        blue:183.0/255.0
-                                       alpha:1.0];
+    bar.barTintColor = kBVSThemeColor;
     bar.tintColor = [UIColor whiteColor];
     [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
