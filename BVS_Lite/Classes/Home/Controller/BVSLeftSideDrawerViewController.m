@@ -39,7 +39,7 @@
 
 - (void)setupBackground {
     //  背景背板
-    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, 280, kBVSScreenHeight-kBVSNavigationBarHeight-kBVSTopViewHeight)];
+    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, kBVSDrawerViewWidth, kBVSScreenHeight-kBVSNavigationBarHeight-kBVSTopViewHeight)];
     backgroundView.backgroundColor = kBVSThemeColor;
     [self.view addSubview:backgroundView];
     
@@ -52,19 +52,20 @@
     //  底部图案
     UIImage *pattern_down = [UIImage imageNamed:@"polygon_down"];
     UIImageView *bottomPatternView = [[UIImageView alloc] initWithImage:pattern_down];
-    bottomPatternView.frame = CGRectMake((280-bottomPatternView.frame.size.width), (kBVSScreenHeight-bottomPatternView.frame.size.height), bottomPatternView.frame.size.width, bottomPatternView.frame.size.height);
+    bottomPatternView.frame = CGRectMake((kBVSDrawerViewWidth-bottomPatternView.frame.size.width), (kBVSScreenHeight-bottomPatternView.frame.size.height), bottomPatternView.frame.size.width, bottomPatternView.frame.size.height);
     [self.view addSubview:bottomPatternView];
 }
 
 - (void)setupTopView {
-    _topView = [[BVSLeftSideDrawerTopView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight, 280, kBVSTopViewHeight)];
+    _topView = [[BVSLeftSideDrawerTopView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight, kBVSDrawerViewWidth, kBVSTopViewHeight)];
     [self.view addSubview:_topView];
+    
+    //  设置数据
     _topView.titleLabel.text = @"ver 1.0.0 2016-3-6";
-    _topView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)setupTableView {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, 280, kBVSScreenHeight-kBVSNavigationBarHeight-_topView.bounds.size.height)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, kBVSDrawerViewWidth, kBVSScreenHeight-kBVSNavigationBarHeight-_topView.bounds.size.height)];
     [self.view addSubview:_tableView];
     _tableView.dataSource = self;
     _tableView.tableFooterView = [[UIView alloc] init];

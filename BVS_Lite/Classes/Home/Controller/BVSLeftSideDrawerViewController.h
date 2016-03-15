@@ -10,6 +10,7 @@
 
 //  宽高
 #define kBVSTopViewHeight 50
+#define kBVSDrawerViewWidth 280
 
 
 //  颜色

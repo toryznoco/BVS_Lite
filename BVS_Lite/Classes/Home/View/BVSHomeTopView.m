@@ -27,25 +27,21 @@
 - (void)setUpAllChildView {
     //  id
     _idLabel = [[UILabel alloc] init];
-    _idLabel.text = @"ID：1";
     _idLabel.font = [UIFont systemFontOfSize:kBVSTopViewFontSize];
     [self addSubview:_idLabel];
     
     //  生日
     _birthLabel = [[UILabel alloc] init];
-    _birthLabel.text = @"生日：1990-01-01";
     _birthLabel.font = [UIFont systemFontOfSize:kBVSTopViewFontSize];
     [self addSubview:_birthLabel];
     
     //  姓名
     _nameLabel = [[UILabel alloc] init];
-    _nameLabel.text = @"姓名：张三";
     _nameLabel.font = [UIFont systemFontOfSize:kBVSTopViewFontSize];
     [self addSubview:_nameLabel];
     
     //  性别
     _genderLabel = [[UILabel alloc] init];
-    _genderLabel.text = @"性别：男";
     _genderLabel.font = [UIFont systemFontOfSize:kBVSTopViewFontSize];
     [self addSubview:_genderLabel];
     

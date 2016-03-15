@@ -15,7 +15,7 @@
 
 @interface BVSCenterViewController ()
 
-@property (nonatomic, strong) UIView *topView;
+@property (nonatomic, strong) BVSHomeTopView *topView;
 
 @end
 
@@ -56,6 +56,12 @@
         make.right.equalTo(self.view.mas_right);
         make.height.mas_equalTo(kBVSCenterTopViewHeight);
     }];
+    
+    //  设置数据
+    _topView.idLabel.text = @"ID：1";
+    _topView.birthLabel.text = @"生日：1990-01-01";
+    _topView.nameLabel.text = @"姓名：张三";
+    _topView.genderLabel.text = @"性别：男";
 }
 
 #pragma mark - Button Handlers

@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+//  宽高
+#define kBVSTitleLabelHeight 30
+
 //  颜色
-#define kBVSLeftSideTitleTextColor [UIColor colorWithRed:100.0/255.0 green:100.0/255.0 blue:100.0/255.0 alpha:1.0]
+#define kBVSTitleTextColor [UIColor colorWithRed:100.0/255.0 green:100.0/255.0 blue:100.0/255.0 alpha:1.0]
 
 @interface BVSLeftSideDrawerTopView : UIView
 
