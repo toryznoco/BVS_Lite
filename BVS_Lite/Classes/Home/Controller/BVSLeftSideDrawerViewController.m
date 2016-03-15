@@ -29,41 +29,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = kBVSThemeColor;
+    self.view.backgroundColor = kBVSLeftBackgroundColor;
     
+    [self setupBackground];
     [self setupTopView];
     [self setupTableView];
     [self setupNavigationBar];
 }
 
+- (void)setupBackground {
+    //  背景背板
+    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, 280, kBVSScreenHeight-kBVSNavigationBarHeight-kBVSTopViewHeight)];
+    backgroundView.backgroundColor = kBVSThemeColor;
+    [self.view addSubview:backgroundView];
+    
+    //  顶部图案
+    UIImage *pattern_up = [UIImage imageNamed:@"polygon_up"];
+    UIImageView *upPatternView = [[UIImageView alloc] initWithImage:pattern_up];
+    upPatternView.frame = CGRectMake(0, kBVSNavigationBarHeight, upPatternView.frame.size.width, upPatternView.frame.size.height);
+    [self.view addSubview:upPatternView];
+    
+    //  底部图案
+    UIImage *pattern_down = [UIImage imageNamed:@"polygon_down"];
+    UIImageView *bottomPatternView = [[UIImageView alloc] initWithImage:pattern_down];
+    bottomPatternView.frame = CGRectMake((280-bottomPatternView.frame.size.width), (kBVSScreenHeight-bottomPatternView.frame.size.height), bottomPatternView.frame.size.width, bottomPatternView.frame.size.height);
+    [self.view addSubview:bottomPatternView];
+}
+
 - (void)setupTopView {
-    _topView = [[BVSLeftSideDrawerTopView alloc] initWithFrame:CGRectMake(0, 64, 280, 50)];
+    _topView = [[BVSLeftSideDrawerTopView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight, 280, kBVSTopViewHeight)];
     [self.view addSubview:_topView];
     _topView.titleLabel.text = @"ver 1.0.0 2016-3-6";
-    _topView.backgroundColor = kBVSLeftTitleColor;
+    _topView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)setupTableView {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64+50, 280, [UIScreen mainScreen].bounds.size.height-64-_topView.bounds.size.height)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, 280, kBVSScreenHeight-kBVSNavigationBarHeight-_topView.bounds.size.height)];
     [self.view addSubview:_tableView];
     _tableView.dataSource = self;
     _tableView.tableFooterView = [[UIView alloc] init];
     _tableView.backgroundColor = [UIColor clearColor];
     [_tableView setSeparatorColor:kBVSLeftSeparatorColor];
-    
-    //  图案
-    UIImage *pattern_down = [UIImage imageNamed:@"polygon_down"];
-    UIImageView *bottomPatternView = [[UIImageView alloc] initWithImage:pattern_down];
-    bottomPatternView.frame = CGRectMake((280-bottomPatternView.frame.size.width), (ScreenH-bottomPatternView.frame.size.height), bottomPatternView.frame.size.width, bottomPatternView.frame.size.height);
-    [self.view addSubview:bottomPatternView];
 }
 
 - (void)setupNavigationBar {
     UINavigationBar *bar = self.navigationController.navigationBar;
-    bar.backgroundColor = kBVSLeftTitleColor;
-    UIView *statusBackground = [[UIView alloc] initWithFrame:CGRectMake(0, -20, 280, 20)];
-    statusBackground.backgroundColor = kBVSLeftTitleColor;
-    [bar addSubview:statusBackground];
+    bar.backgroundColor = [UIColor clearColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -76,21 +87,6 @@
     //去除导航栏下方的横线
     [navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [navigationBar setShadowImage:[UIImage new]];
-}
-
-- (UIImage *)imageWithColor:(UIColor *)color
-{
-    NSParameterAssert(color != nil);
-    
-    CGRect rect = CGRectMake(0, 0, 1, 1);
-    // Create a 1 by 1 pixel context
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    [color setFill];
-    UIRectFill(rect);   // Fill it with your color
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return image;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -120,7 +116,6 @@
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.imageView.image = [UIImage imageNamed:@"tag"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    NSLog(@"");
     switch (indexPath.row) {
         case 0:
             cell.textLabel.text = @"一般信息";

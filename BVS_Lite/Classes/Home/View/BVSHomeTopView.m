@@ -11,7 +11,7 @@
 
 @interface BVSHomeTopView ()
 
-@property (nonatomic, strong) UIView *bottomLine;
+@property (nonatomic, strong) UIView *separator;
 
 @end
 
@@ -50,44 +50,44 @@
     [self addSubview:_genderLabel];
     
     //  分割线
-    _bottomLine = [[UIView alloc] init];
-    [_bottomLine setBackgroundColor:[UIColor lightGrayColor]];
-    [self addSubview:_bottomLine];
+    _separator = [[UIView alloc] init];
+    [_separator setBackgroundColor:[UIColor lightGrayColor]];
+    [self addSubview:_separator];
 }
 
 // this is Apple's recommended place for adding/updating constraints
 - (void)updateConstraints {
     [_idLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_top).with.offset(8);
-        make.left.equalTo(self.mas_left).with.offset(10);
-        make.right.equalTo(self.mas_centerX).with.offset(-3);
-        make.bottom.equalTo(self.mas_centerY).with.offset(-3);
+        make.top.equalTo(self.mas_top).with.offset(kBVSLabelTopBottomMargin);
+        make.left.equalTo(self.mas_left).with.offset(kBVSLabelLeftRightMargin);
+        make.right.equalTo(self.mas_centerX).with.offset(-kBVSLabelInterval/2);
+        make.bottom.equalTo(self.mas_centerY).with.offset(-kBVSLabelInterval/2);
     }];
     
     [_birthLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_idLabel);
-        make.left.equalTo(self.mas_centerX).with.offset(3);
-        make.right.equalTo(self.mas_right).with.offset(-10);
+        make.left.equalTo(self.mas_centerX).with.offset(kBVSLabelInterval/2);
+        make.right.equalTo(self.mas_right).with.offset(-kBVSLabelLeftRightMargin);
         make.bottom.equalTo(_idLabel);
     }];
     
     [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_centerY).with.offset(3);
+        make.top.equalTo(self.mas_centerY).with.offset(kBVSLabelInterval/2);
         make.left.equalTo(_idLabel);
         make.right.equalTo(_idLabel);
-        make.bottom.equalTo(self.mas_bottom).with.offset(-8);
+        make.bottom.equalTo(self.mas_bottom).with.offset(-kBVSLabelTopBottomMargin);
     }];
     
     [_genderLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_nameLabel);
-        make.left.equalTo(self.mas_centerX).with.offset(3);
+        make.left.equalTo(self.mas_centerX).with.offset(kBVSLabelInterval/2);
         make.right.equalTo(_birthLabel);
         make.bottom.equalTo(_nameLabel);
     }];
     
-    [_bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_separator mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self.mas_width);
-        make.height.mas_equalTo(1);
+        make.height.mas_equalTo(kBVSSeparatorHeight);
         make.bottom.equalTo(self.mas_bottom);
     }];
     

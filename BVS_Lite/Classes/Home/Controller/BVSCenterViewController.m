@@ -35,7 +35,6 @@
     
     [self setupLeftMenuButton];
     [self setupRightMenuButton];
-    
     [self setupTopView];
 }
 
@@ -52,10 +51,10 @@
 - (void)setupTopView {
     [self.view addSubview:_topView];
     [_topView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top).with.offset(64);
+        make.top.equalTo(self.view.mas_top).with.offset(kBVSNavigationBarHeight);
         make.left.equalTo(self.view.mas_left);
         make.right.equalTo(self.view.mas_right);
-        make.height.mas_equalTo(90);
+        make.height.mas_equalTo(kBVSCenterTopViewHeight);
     }];
 }
 

@@ -12,9 +12,10 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-//  尺寸
-#define ScreenW [UIScreen mainScreen].bounds.size.width
-#define ScreenH [UIScreen mainScreen].bounds.size.height
+//  宽高
+#define kBVSScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kBVSScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kBVSNavigationBarHeight 64
 
 //  颜色
 #define kBVSThemeColor [UIColor colorWithRed:33.0/255.0 green:202.0/255.0 blue:183.0/255.0 alpha:1.0]

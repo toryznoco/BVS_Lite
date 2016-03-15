@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 //  宽高
+#define kBVSLabelTopBottomMargin 8
+#define kBVSLabelLeftRightMargin 10
+#define kBVSLabelInterval 6
+#define kBVSSeparatorHeight 1
 
 //  字体
 #define kBVSTopViewFontSize 17      // 字体大小

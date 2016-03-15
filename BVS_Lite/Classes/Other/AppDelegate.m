@@ -13,7 +13,6 @@
 #import "BVSRightSideDrawerTableViewController.h"
 #import "TRNavigationController.h"
 #import "MMDrawerVisualState.h"
-#import "BVSDrawerVisualStateManager.h"
 
 @interface AppDelegate ()
 

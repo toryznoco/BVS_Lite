@@ -12,13 +12,16 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.5.7):
     - MMDrawerController/Core
+  - Reveal-iOS-SDK (1.6.2)
 
 DEPENDENCIES:
   - Masonry
   - MMDrawerController (~> 0.5.7)
+  - Reveal-iOS-SDK
 
 SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
 
 COCOAPODS: 0.39.0

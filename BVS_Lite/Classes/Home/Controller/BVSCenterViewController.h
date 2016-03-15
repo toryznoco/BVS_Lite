@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+//  宽高
+#define kBVSCenterTopViewHeight 90
 
 @interface BVSCenterViewController : UIViewController
 

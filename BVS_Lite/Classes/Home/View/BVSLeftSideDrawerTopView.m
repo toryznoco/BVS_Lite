@@ -22,7 +22,7 @@
 - (void)setupTitleLabel {
     _titleLabel = [[UILabel alloc] init];
     _titleLabel.backgroundColor = [UIColor clearColor];
-    _titleLabel.textColor = kBVSLeftSideTitleColor;
+    _titleLabel.textColor = kBVSLeftSideTitleTextColor;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:_titleLabel];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
