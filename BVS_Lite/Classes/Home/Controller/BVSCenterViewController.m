@@ -11,9 +11,10 @@
 #import <Masonry.h>
 #import <MMDrawerBarButtonItem.h>
 #import <UIViewController+MMDrawerController.h>
+#import <AsyncSocket.h>
 
 
-@interface BVSCenterViewController ()
+@interface BVSCenterViewController () <AsyncSocketDelegate>
 
 @property (nonatomic, strong) BVSHomeTopView *topView;
 
@@ -36,6 +37,13 @@
     [self setupLeftMenuButton];
     [self setupRightMenuButton];
     [self setupTopView];
+    
+    AsyncSocket *socket = [[AsyncSocket alloc] initWithDelegate:self];
+    [socket connectToHost:@"www.baidu.com" onPort:80 error:nil];
+    
+    [socket writeData:[@"GET /HTTP/1.1\n\n" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:3 tag:1];
+    [socket readDataWithTimeout:3 tag:1];
+    
 }
 
 - (void)setupLeftMenuButton {
@@ -76,6 +84,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port{
+    NSLog(@"did connect to host");
+}
+
+- (void)onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
+    NSLog(@"did read data");
+    NSString* message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"message is: \n%@",message);
 }
 
 /*
