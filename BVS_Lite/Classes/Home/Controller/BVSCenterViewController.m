@@ -11,12 +11,12 @@
 #import <Masonry.h>
 #import <MMDrawerBarButtonItem.h>
 #import <UIViewController+MMDrawerController.h>
-#import <AsyncSocket.h>
+#import <GCDAsyncSocket.h>
 
 
-@interface BVSCenterViewController () <AsyncSocketDelegate>
+@interface BVSCenterViewController () <GCDAsyncSocketDelegate>
 
-@property (nonatomic, strong) BVSHomeTopView *topView;
+@property (nonatomic, weak) BVSHomeTopView *topView;
 
 @end
 
@@ -25,7 +25,6 @@
 - (instancetype)init {
     if (self = [super init]) {
         [self setRestorationIdentifier:@"BVSCenterControllerRestorationKey"];
-        _topView = [[BVSHomeTopView alloc] init];
     }
     return self;
 }
@@ -37,12 +36,6 @@
     [self setupLeftMenuButton];
     [self setupRightMenuButton];
     [self setupTopView];
-    
-    AsyncSocket *socket = [[AsyncSocket alloc] initWithDelegate:self];
-    [socket connectToHost:@"www.baidu.com" onPort:80 error:nil];
-    
-    [socket writeData:[@"GET /HTTP/1.1\n\n" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:3 tag:1];
-    [socket readDataWithTimeout:3 tag:1];
     
 }
 
@@ -57,7 +50,9 @@
 }
 
 - (void)setupTopView {
-    [self.view addSubview:_topView];
+    BVSHomeTopView *topView = [[BVSHomeTopView alloc] init];
+    [self.view addSubview:topView];
+    _topView = topView;
     [_topView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).with.offset(kBVSNavigationBarHeight);
         make.left.equalTo(self.view.mas_left);
@@ -84,16 +79,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port{
-    NSLog(@"did connect to host");
-}
-
-- (void)onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
-    NSLog(@"did read data");
-    NSString* message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"message is: \n%@",message);
 }
 
 /*

@@ -16,6 +16,6 @@
 
 @interface BVSLeftSideDrawerTopView : UIView
 
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, weak) UILabel *titleLabel;
 
 @end

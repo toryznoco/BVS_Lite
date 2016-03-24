@@ -46,16 +46,16 @@
 		94A38CCB0401E68BEB117D9C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A1C6D0D1C8C27A500BFD95A /* BVSCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSCenterViewController.h; sourceTree = "<group>"; };
 		9A1C6D0E1C8C27A500BFD95A /* BVSCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSCenterViewController.m; sourceTree = "<group>"; };
-		9A1C6D111C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSRightSideDrawerTableViewController.h; sourceTree = "<group>"; };
-		9A1C6D121C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSRightSideDrawerTableViewController.m; sourceTree = "<group>"; };
+		9A1C6D111C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BVSRightSideDrawerTableViewController.h; path = ../../Home/Controller/BVSRightSideDrawerTableViewController.h; sourceTree = "<group>"; };
+		9A1C6D121C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BVSRightSideDrawerTableViewController.m; path = ../../Home/Controller/BVSRightSideDrawerTableViewController.m; sourceTree = "<group>"; };
 		9A1C6D181C8C325E00BFD95A /* BVSHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSHomeTopView.h; sourceTree = "<group>"; };
 		9A1C6D191C8C325E00BFD95A /* BVSHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSHomeTopView.m; sourceTree = "<group>"; };
 		9A32DF681C9271DD00BE0331 /* BVS_Lite.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVS_Lite.pch; sourceTree = "<group>"; };
 		9A32DF6F1C979EBD00BE0331 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		9A4EC01A1C91030800245CA9 /* BVSLeftSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerViewController.h; sourceTree = "<group>"; };
-		9A4EC01B1C91030800245CA9 /* BVSLeftSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSLeftSideDrawerViewController.m; sourceTree = "<group>"; };
-		9A4EC01D1C91037B00245CA9 /* BVSLeftSideDrawerTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerTopView.h; sourceTree = "<group>"; };
-		9A4EC01E1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSLeftSideDrawerTopView.m; sourceTree = "<group>"; };
+		9A4EC01A1C91030800245CA9 /* BVSLeftSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BVSLeftSideDrawerViewController.h; path = ../../Home/Controller/BVSLeftSideDrawerViewController.h; sourceTree = "<group>"; };
+		9A4EC01B1C91030800245CA9 /* BVSLeftSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BVSLeftSideDrawerViewController.m; path = ../../Home/Controller/BVSLeftSideDrawerViewController.m; sourceTree = "<group>"; };
+		9A4EC01D1C91037B00245CA9 /* BVSLeftSideDrawerTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BVSLeftSideDrawerTopView.h; path = ../../Home/View/BVSLeftSideDrawerTopView.h; sourceTree = "<group>"; };
+		9A4EC01E1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BVSLeftSideDrawerTopView.m; path = ../../Home/View/BVSLeftSideDrawerTopView.m; sourceTree = "<group>"; };
 		9AD21C411C87286F0003248A /* BVS_Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BVS_Lite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD21C451C87286F0003248A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AD21C501C87286F0003248A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,10 +124,6 @@
 			children = (
 				9A1C6D0D1C8C27A500BFD95A /* BVSCenterViewController.h */,
 				9A1C6D0E1C8C27A500BFD95A /* BVSCenterViewController.m */,
-				9A1C6D111C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.h */,
-				9A1C6D121C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m */,
-				9A4EC01A1C91030800245CA9 /* BVSLeftSideDrawerViewController.h */,
-				9A4EC01B1C91030800245CA9 /* BVSLeftSideDrawerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,8 +140,6 @@
 			children = (
 				9A1C6D181C8C325E00BFD95A /* BVSHomeTopView.h */,
 				9A1C6D191C8C325E00BFD95A /* BVSHomeTopView.m */,
-				9A4EC01D1C91037B00245CA9 /* BVSLeftSideDrawerTopView.h */,
-				9A4EC01E1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +149,74 @@
 			children = (
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		9A3FD5741CA37139005C31D9 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				9A3FD5751CA37139005C31D9 /* Controller */,
+				9A3FD5761CA37139005C31D9 /* Model */,
+				9A3FD5771CA37139005C31D9 /* View */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		9A3FD5751CA37139005C31D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A4EC01A1C91030800245CA9 /* BVSLeftSideDrawerViewController.h */,
+				9A4EC01B1C91030800245CA9 /* BVSLeftSideDrawerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A3FD5761CA37139005C31D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A3FD5771CA37139005C31D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A4EC01D1C91037B00245CA9 /* BVSLeftSideDrawerTopView.h */,
+				9A4EC01E1C91037B00245CA9 /* BVSLeftSideDrawerTopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A3FD5781CA37149005C31D9 /* Right */ = {
+			isa = PBXGroup;
+			children = (
+				9A3FD5791CA37149005C31D9 /* Controller */,
+				9A3FD57A1CA37149005C31D9 /* Model */,
+				9A3FD57B1CA37149005C31D9 /* View */,
+			);
+			path = Right;
+			sourceTree = "<group>";
+		};
+		9A3FD5791CA37149005C31D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A1C6D111C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.h */,
+				9A1C6D121C8C27A500BFD95A /* BVSRightSideDrawerTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A3FD57A1CA37149005C31D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A3FD57B1CA37149005C31D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9AD21C381C87286F0003248A = {
@@ -222,6 +284,8 @@
 			children = (
 				9AD21C781C8850670003248A /* Main */,
 				9A1C6D0B1C8C27A500BFD95A /* Home */,
+				9A3FD5741CA37139005C31D9 /* Left */,
+				9A3FD5781CA37149005C31D9 /* Right */,
 				9AD21C8F1C8874E60003248A /* Tools */,
 				9AD21C7C1C8850670003248A /* Other */,
 			);

@@ -21,11 +21,12 @@
 }
 
 - (void)setupTitleLabel {
-    _titleLabel = [[UILabel alloc] init];
+    UILabel *titleLabel = [[UILabel alloc] init];
+    [self addSubview:titleLabel];
+    _titleLabel = titleLabel;
     _titleLabel.backgroundColor = [UIColor clearColor];
     _titleLabel.textColor = kBVSTitleTextColor;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self addSubview:_titleLabel];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left);
         make.right.equalTo(self.mas_right);

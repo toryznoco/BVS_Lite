@@ -12,8 +12,8 @@
 
 @interface BVSLeftSideDrawerViewController () <UITableViewDataSource>
 
-@property (nonatomic, strong) BVSLeftSideDrawerTopView *topView;
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, weak) BVSLeftSideDrawerTopView *topView;
+@property (nonatomic, weak) UITableView *tableView;
 
 @end
 
@@ -32,9 +32,9 @@
     self.view.backgroundColor = kBVSLeftBackgroundColor;
     
     [self setupBackground];
+    [self setupNavigationBar];
     [self setupTopView];
     [self setupTableView];
-    [self setupNavigationBar];
 }
 
 - (void)setupBackground {
@@ -56,29 +56,31 @@
     [self.view addSubview:bottomPatternView];
 }
 
+- (void)setupNavigationBar {
+    UINavigationBar *bar = self.navigationController.navigationBar;
+    bar.backgroundColor = [UIColor clearColor];
+}
+
 - (void)setupTopView {
-    _topView = [[BVSLeftSideDrawerTopView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight, kBVSDrawerViewWidth, kBVSTopViewHeight)];
-    [self.view addSubview:_topView];
+    BVSLeftSideDrawerTopView *topView = [[BVSLeftSideDrawerTopView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight, kBVSDrawerViewWidth, kBVSTopViewHeight)];
+    _topView = topView;
+    [self.view addSubview:topView];
     
     //  设置数据
     _topView.titleLabel.text = @"ver 1.0.0 2016-3-6";
 }
 
 - (void)setupTableView {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, kBVSDrawerViewWidth, kBVSScreenHeight-kBVSNavigationBarHeight-_topView.bounds.size.height)];
-    [self.view addSubview:_tableView];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kBVSNavigationBarHeight+kBVSTopViewHeight, kBVSDrawerViewWidth, kBVSScreenHeight-kBVSNavigationBarHeight-_topView.bounds.size.height)];
+    _tableView = tableView;
+    [self.view addSubview:tableView];
     _tableView.dataSource = self;
     _tableView.tableFooterView = [[UIView alloc] init];
     _tableView.backgroundColor = [UIColor clearColor];
     [_tableView setSeparatorColor:kBVSLeftSeparatorColor];
 }
 
-- (void)setupNavigationBar {
-    UINavigationBar *bar = self.navigationController.navigationBar;
-    bar.backgroundColor = [UIColor clearColor];
-}
-
-- (void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated {
     
     // Called when the view is about to made visible. Default does nothing
     [super viewWillAppear:animated];
