@@ -12,6 +12,7 @@
 #import <MMDrawerBarButtonItem.h>
 #import <UIViewController+MMDrawerController.h>
 #import <GCDAsyncSocket.h>
+#import "BVSInputView.h"
 
 
 @interface BVSCenterViewController () <GCDAsyncSocketDelegate>
@@ -65,6 +66,30 @@
     _topView.birthLabel.text = @"生日：1990-01-01";
     _topView.nameLabel.text = @"姓名：张三";
     _topView.genderLabel.text = @"性别：男";
+    
+    //  盖一个透明按钮
+    UIButton *topCoverButton = [[UIButton alloc] init];
+    [self.view addSubview:topCoverButton];
+    [topCoverButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top).with.offset(kBVSNavigationBarHeight);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.height.mas_equalTo(kBVSCenterTopViewHeight);
+    }];
+    topCoverButton.backgroundColor = [UIColor clearColor];
+    
+    [topCoverButton addTarget:self action:@selector(topViewTap) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)topViewTap {
+    NSLog(@"点了");
+    BVSInputView *inputView = [[BVSInputView alloc]
+                                  initWithTitle:nil
+                                  message:nil
+                                  delegate:self
+                                  cancelButtonTitle:@"取消"
+                                  otherButtonTitles:@"确定", nil];
+    [inputView show];
 }
 
 #pragma mark - Button Handlers

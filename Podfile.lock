@@ -6,6 +6,7 @@ PODS:
     - CocoaAsyncSocket/RunLoop
   - CocoaAsyncSocket/GCD (7.4.3)
   - CocoaAsyncSocket/RunLoop (7.4.3)
+  - CustomIOSAlertView (0.9.3)
   - Masonry (0.6.4)
   - MMDrawerController (0.5.7):
     - MMDrawerController/Core (= 0.5.7)
@@ -23,12 +24,14 @@ PODS:
 
 DEPENDENCIES:
   - CocoaAsyncSocket
+  - CustomIOSAlertView (~> 0.9.3)
   - Masonry
   - MMDrawerController (~> 0.5.7)
   - Reveal-iOS-SDK
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  CustomIOSAlertView: 94d2401e34fcfb0ac0134679d6947f5e251b0446
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
