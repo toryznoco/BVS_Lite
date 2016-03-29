@@ -24,7 +24,9 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+
 CGFloat const MMDrawerDefaultWidth = 280.0f;
+//#define MMDrawerDefaultWidth [UIScreen mainScreen].bounds.size.width
 CGFloat const MMDrawerDefaultAnimationVelocity = 840.0f;
 
 NSTimeInterval const MMDrawerDefaultFullAnimationDelay = 0.10f;

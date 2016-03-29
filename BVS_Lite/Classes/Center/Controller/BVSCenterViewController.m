@@ -82,7 +82,7 @@
 }
 
 - (void)topViewTap {
-    NSLog(@"点了");
+    
     BVSInputView *inputView = [[BVSInputView alloc]
                                   initWithTitle:nil
                                   message:nil

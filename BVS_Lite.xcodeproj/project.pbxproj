@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04328AD81CA58669004BC786 /* BVSNormalInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04328AD71CA58669004BC786 /* BVSNormalInfoView.m */; };
+		047E20FB1CA5901000871641 /* BVSNormalInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 047E20FA1CA5901000871641 /* BVSNormalInfoModel.m */; };
+		048780891CA6534300F277DA /* BVSKeepingFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048780881CA6534300F277DA /* BVSKeepingFrameView.m */; };
+		0487808C1CA6569100F277DA /* BVSKeepingBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487808B1CA6569100F277DA /* BVSKeepingBtnView.m */; };
+		048780921CA66B5600F277DA /* BVSAuthorizeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048780911CA66B5600F277DA /* BVSAuthorizeInfoViewController.m */; };
+		0498417E1CA5A5C7008F6B87 /* BVSContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498417D1CA5A5C7008F6B87 /* BVSContainerView.m */; };
 		9A32DF701C979EBD00BE0331 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A32DF6F1C979EBD00BE0331 /* libz.tbd */; };
 		9A533D581CA3C8C700B83825 /* BVSCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D491CA3C8C700B83825 /* BVSCenterViewController.m */; };
 		9A533D5B1CA3C8C700B83825 /* BVSSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D501CA3C8C700B83825 /* BVSSubject.m */; };
@@ -43,6 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04328AD61CA58669004BC786 /* BVSNormalInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSNormalInfoView.h; sourceTree = "<group>"; };
+		04328AD71CA58669004BC786 /* BVSNormalInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSNormalInfoView.m; sourceTree = "<group>"; };
+		047E20F91CA5901000871641 /* BVSNormalInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BVSNormalInfoModel.h; path = BVS_Lite/Classes/Left/View/BVSNormalInfoModel.h; sourceTree = SOURCE_ROOT; };
+		047E20FA1CA5901000871641 /* BVSNormalInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BVSNormalInfoModel.m; path = BVS_Lite/Classes/Left/View/BVSNormalInfoModel.m; sourceTree = SOURCE_ROOT; };
+		048780871CA6534300F277DA /* BVSKeepingFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSKeepingFrameView.h; sourceTree = "<group>"; };
+		048780881CA6534300F277DA /* BVSKeepingFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSKeepingFrameView.m; sourceTree = "<group>"; };
+		0487808A1CA6569100F277DA /* BVSKeepingBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSKeepingBtnView.h; sourceTree = "<group>"; };
+		0487808B1CA6569100F277DA /* BVSKeepingBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSKeepingBtnView.m; sourceTree = "<group>"; };
+		048780901CA66B5600F277DA /* BVSAuthorizeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSAuthorizeInfoViewController.h; sourceTree = "<group>"; };
+		048780911CA66B5600F277DA /* BVSAuthorizeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSAuthorizeInfoViewController.m; sourceTree = "<group>"; };
+		0498417C1CA5A5C7008F6B87 /* BVSContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BVSContainerView.h; path = BVS_Lite/Classes/Left/View/BVSContainerView.h; sourceTree = SOURCE_ROOT; };
+		0498417D1CA5A5C7008F6B87 /* BVSContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BVSContainerView.m; path = BVS_Lite/Classes/Left/View/BVSContainerView.m; sourceTree = SOURCE_ROOT; };
 		74B1C0FA6310F60F78E3A7A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8412FF201C0B2D42BAF11DA2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A38CCB0401E68BEB117D9C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +124,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0487808D1CA6570300F277DA /* NormalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				04328AD61CA58669004BC786 /* BVSNormalInfoView.h */,
+				04328AD71CA58669004BC786 /* BVSNormalInfoView.m */,
+				0498417C1CA5A5C7008F6B87 /* BVSContainerView.h */,
+				0498417D1CA5A5C7008F6B87 /* BVSContainerView.m */,
+			);
+			name = NormalInfo;
+			sourceTree = "<group>";
+		};
+		0487808E1CA6571B00F277DA /* KeepingFrameSetting */ = {
+			isa = PBXGroup;
+			children = (
+				048780871CA6534300F277DA /* BVSKeepingFrameView.h */,
+				048780881CA6534300F277DA /* BVSKeepingFrameView.m */,
+				0487808A1CA6569100F277DA /* BVSKeepingBtnView.h */,
+				0487808B1CA6569100F277DA /* BVSKeepingBtnView.m */,
+			);
+			name = KeepingFrameSetting;
+			sourceTree = "<group>";
+		};
+		0487808F1CA66AFE00F277DA /* AuthorizenInfo */ = {
+			isa = PBXGroup;
+			children = (
+				048780901CA66B5600F277DA /* BVSAuthorizeInfoViewController.h */,
+				048780911CA66B5600F277DA /* BVSAuthorizeInfoViewController.m */,
+			);
+			name = AuthorizenInfo;
+			sourceTree = "<group>";
+		};
 		8F08C799FBD0C6AEE9752B74 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +230,7 @@
 		9A533D601CA3C98300B83825 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0487808F1CA66AFE00F277DA /* AuthorizenInfo */,
 				9A533D611CA3C98300B83825 /* BVSLeftSideDrawerViewController.h */,
 				9A533D621CA3C98300B83825 /* BVSLeftSideDrawerViewController.m */,
 			);
@@ -190,6 +240,8 @@
 		9A533D631CA3C98300B83825 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				047E20F91CA5901000871641 /* BVSNormalInfoModel.h */,
+				047E20FA1CA5901000871641 /* BVSNormalInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +249,8 @@
 		9A533D641CA3C98300B83825 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0487808E1CA6571B00F277DA /* KeepingFrameSetting */,
+				0487808D1CA6570300F277DA /* NormalInfo */,
 				9A533D651CA3C98300B83825 /* BVSLeftSideDrawerTopView.h */,
 				9A533D661CA3C98300B83825 /* BVSLeftSideDrawerTopView.m */,
 			);
@@ -440,7 +494,7 @@
 				TargetAttributes = {
 					9AD21C401C87286F0003248A = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = CQA977E7GY;
+						DevelopmentTeam = N687ET5NQA;
 					};
 					9AD21C591C87286F0003248A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -553,15 +607,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0498417E1CA5A5C7008F6B87 /* BVSContainerView.m in Sources */,
 				9AD21C7F1C8850670003248A /* AppDelegate.m in Sources */,
+				0487808C1CA6569100F277DA /* BVSKeepingBtnView.m in Sources */,
 				9A533D671CA3C98300B83825 /* BVSLeftSideDrawerViewController.m in Sources */,
 				9A533D5B1CA3C8C700B83825 /* BVSSubject.m in Sources */,
 				9AD21C461C87286F0003248A /* main.m in Sources */,
 				9A533D6F1CA3C98B00B83825 /* BVSRightSideDrawerTableViewController.m in Sources */,
 				9A533D5C1CA3C8C700B83825 /* BVSHomeTopView.m in Sources */,
+				048780921CA66B5600F277DA /* BVSAuthorizeInfoViewController.m in Sources */,
+				04328AD81CA58669004BC786 /* BVSNormalInfoView.m in Sources */,
 				9A533D581CA3C8C700B83825 /* BVSCenterViewController.m in Sources */,
+				047E20FB1CA5901000871641 /* BVSNormalInfoModel.m in Sources */,
 				9AD21C8E1C8865EB0003248A /* TRNavigationController.m in Sources */,
 				9A533D681CA3C98300B83825 /* BVSLeftSideDrawerTopView.m in Sources */,
+				048780891CA6534300F277DA /* BVSKeepingFrameView.m in Sources */,
 				9A533D5D1CA3C8C700B83825 /* BVSInputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +754,7 @@
 			baseConfigurationReference = 74B1C0FA6310F60F78E3A7A5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BVS_Lite/Classes/Other/Lib",
@@ -703,7 +764,7 @@
 				INFOPLIST_FILE = BVS_Lite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.net.normcore.BVS-Lite";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naidour.www.BVS-Lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -713,6 +774,7 @@
 			baseConfigurationReference = 94A38CCB0401E68BEB117D9C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BVS_Lite/Classes/Other/Lib",
@@ -722,7 +784,7 @@
 				INFOPLIST_FILE = BVS_Lite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.net.normcore.BVS-Lite";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.naidour.www.BVS-Lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
