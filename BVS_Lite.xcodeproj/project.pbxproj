@@ -11,7 +11,7 @@
 		9A533D581CA3C8C700B83825 /* BVSCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D491CA3C8C700B83825 /* BVSCenterViewController.m */; };
 		9A533D5B1CA3C8C700B83825 /* BVSSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D501CA3C8C700B83825 /* BVSSubject.m */; };
 		9A533D5C1CA3C8C700B83825 /* BVSHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D531CA3C8C700B83825 /* BVSHomeTopView.m */; };
-		9A533D5D1CA3C8C700B83825 /* BVSInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D551CA3C8C700B83825 /* BVSInputView.m */; };
+		9A533D5D1CA3C8C700B83825 /* BVSInputAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D551CA3C8C700B83825 /* BVSInputAlertView.m */; };
 		9A533D671CA3C98300B83825 /* BVSLeftSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D621CA3C98300B83825 /* BVSLeftSideDrawerViewController.m */; };
 		9A533D681CA3C98300B83825 /* BVSLeftSideDrawerTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D661CA3C98300B83825 /* BVSLeftSideDrawerTopView.m */; };
 		9A533D6F1CA3C98B00B83825 /* BVSRightSideDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D6C1CA3C98B00B83825 /* BVSRightSideDrawerTableViewController.m */; };
@@ -54,8 +54,8 @@
 		9A533D501CA3C8C700B83825 /* BVSSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSSubject.m; sourceTree = "<group>"; };
 		9A533D521CA3C8C700B83825 /* BVSHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSHomeTopView.h; sourceTree = "<group>"; };
 		9A533D531CA3C8C700B83825 /* BVSHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSHomeTopView.m; sourceTree = "<group>"; };
-		9A533D541CA3C8C700B83825 /* BVSInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSInputView.h; sourceTree = "<group>"; };
-		9A533D551CA3C8C700B83825 /* BVSInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSInputView.m; sourceTree = "<group>"; };
+		9A533D541CA3C8C700B83825 /* BVSInputAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSInputAlertView.h; sourceTree = "<group>"; };
+		9A533D551CA3C8C700B83825 /* BVSInputAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSInputAlertView.m; sourceTree = "<group>"; };
 		9A533D611CA3C98300B83825 /* BVSLeftSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerViewController.h; sourceTree = "<group>"; };
 		9A533D621CA3C98300B83825 /* BVSLeftSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVSLeftSideDrawerViewController.m; sourceTree = "<group>"; };
 		9A533D651CA3C98300B83825 /* BVSLeftSideDrawerTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVSLeftSideDrawerTopView.h; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 			children = (
 				9A533D521CA3C8C700B83825 /* BVSHomeTopView.h */,
 				9A533D531CA3C8C700B83825 /* BVSHomeTopView.m */,
-				9A533D541CA3C8C700B83825 /* BVSInputView.h */,
-				9A533D551CA3C8C700B83825 /* BVSInputView.m */,
+				9A533D541CA3C8C700B83825 /* BVSInputAlertView.h */,
+				9A533D551CA3C8C700B83825 /* BVSInputAlertView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -562,7 +562,7 @@
 				9A533D581CA3C8C700B83825 /* BVSCenterViewController.m in Sources */,
 				9AD21C8E1C8865EB0003248A /* TRNavigationController.m in Sources */,
 				9A533D681CA3C98300B83825 /* BVSLeftSideDrawerTopView.m in Sources */,
-				9A533D5D1CA3C8C700B83825 /* BVSInputView.m in Sources */,
+				9A533D5D1CA3C8C700B83825 /* BVSInputAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
