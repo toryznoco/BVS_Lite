@@ -12,7 +12,7 @@
 #import <MMDrawerBarButtonItem.h>
 #import <UIViewController+MMDrawerController.h>
 #import <GCDAsyncSocket.h>
-#import "BVSInputView.h"
+#import "BVSInputAlertView.h"
 
 
 @interface BVSCenterViewController () <GCDAsyncSocketDelegate>
@@ -83,13 +83,8 @@
 
 - (void)topViewTap {
     NSLog(@"点了");
-    BVSInputView *inputView = [[BVSInputView alloc]
-                                  initWithTitle:nil
-                                  message:nil
-                                  delegate:self
-                                  cancelButtonTitle:@"取消"
-                                  otherButtonTitles:@"确定", nil];
-    [inputView show];
+    BVSInputAlertView *inputAlertView = [[BVSInputAlertView alloc] initWithFrame:CGRectMake((kBVSScreenWidth-kBVSInputAlertViewWidth)/2, kBVSNavigationBarHeight+100, kBVSInputAlertViewWidth, 2*kBVSInputAlertViewTopBottomMargin+4*kBVSInputAlertViewRowHeight+3*kBVSInputAlertViewInterval)];
+    [self.view addSubview:inputAlertView];
 }
 
 #pragma mark - Button Handlers

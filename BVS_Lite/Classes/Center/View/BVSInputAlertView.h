@@ -9,18 +9,18 @@
 #import <UIKit/UIKit.h>
 
 //  宽高
-#define kBVSInputViewWidth 300
-#define kBVSInputViewLabelWidth 100
-#define kBVSInputViewInputWidth (kBVSInputViewWidth-kBVSInputViewLabelWidth-2*kBVSInputViewLeftRightMargin)
-#define kBVSInputViewRowHeight 100
-#define kBVSInputViewTopBottomMargin 8
-#define kBVSInputViewLeftRightMargin 10
-#define kBVSInputViewInterval 5
+#define kBVSInputAlertViewWidth 300
+#define kBVSInputAlertViewLabelWidth 100
+#define kBVSInputAlertViewInputWidth (kBVSInputAlertViewWidth-kBVSInputAlertViewLabelWidth-2*kBVSInputAlertViewLeftRightMargin)
+#define kBVSInputAlertViewRowHeight 30
+#define kBVSInputAlertViewTopBottomMargin 8
+#define kBVSInputAlertViewLeftRightMargin 10
+#define kBVSInputAlertViewInterval 5
 
 //  字体
-#define kBVSInputViewFontSize 15
+#define kBVSInputAlertViewFontSize 15
 
-@interface BVSInputView : UIAlertView
+@interface BVSInputAlertView : UIView
 
 /**
  *  生日
@@ -39,5 +39,8 @@
  */
 @property (nonatomic, weak) UITextField *numberTextField;
 
+- (void)show;
+
+- (void)close;
 
 @end
