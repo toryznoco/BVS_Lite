@@ -60,8 +60,7 @@
 
 #pragma mark - 点击事件
 
-- (void)tapBtnClicked:(UIButton*)btn{
-
+- (void)tapBtnClicked:(UIButton*)btn {
     if ([self.delegate respondsToSelector:@selector(normalInfoViewPopUpEditor)]) {
         [self.delegate normalInfoViewPopUpEditor];
     }
@@ -69,7 +68,7 @@
 
 #pragma mark - 初始化控件
 
-- (void)setupBtn{
+- (void)setupBtn {
 
     UIButton *tapBtn = [[UIButton alloc] init];
     _tapBtn = tapBtn;
@@ -82,7 +81,7 @@
 /**
  *  设置信息控件
  */
-- (void)setupInfo{
+- (void)setupInfo {
 
     UILabel * hospitalNameLabel = [[UILabel alloc] init];
     _hospitalNameLabel = hospitalNameLabel;
@@ -125,7 +124,7 @@
 
 #pragma mark - 设置模型
 
-- (void)setNormalInfo:(BVSNormalInfoModel *)normalInfo{
+- (void)setNormalInfo:(BVSNormalInfoModel *)normalInfo {
 
     _normalInfo = normalInfo;
 
@@ -137,7 +136,7 @@
 
 #pragma mark -更新约束
 
-- (void)updateConstraints{
+- (void)updateConstraints {
 
     //字体字典
     NSMutableDictionary *dictName = [NSMutableDictionary dictionary];
