@@ -38,6 +38,7 @@
     [self setupRightMenuButton];
     [self setupTopView];
     
+    
 }
 
 - (void)setupLeftMenuButton {

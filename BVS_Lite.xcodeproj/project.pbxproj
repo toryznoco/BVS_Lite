@@ -28,6 +28,7 @@
 		9AD21C6A1C87286F0003248A /* BVS_LiteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD21C691C87286F0003248A /* BVS_LiteUITests.m */; };
 		9AD21C7F1C8850670003248A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD21C7E1C8850670003248A /* AppDelegate.m */; };
 		9AD21C8E1C8865EB0003248A /* TRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD21C8D1C8865EB0003248A /* TRNavigationController.m */; };
+		9AE8ABE51CACD825000CBC67 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8ABE41CACD825000CBC67 /* Reachability.m */; };
 		E2C8BDA7E257CD7138CC3537 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8412FF201C0B2D42BAF11DA2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		9AD21C7E1C8850670003248A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9AD21C8C1C8865EB0003248A /* TRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNavigationController.h; sourceTree = "<group>"; };
 		9AD21C8D1C8865EB0003248A /* TRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNavigationController.m; sourceTree = "<group>"; };
+		9AE8ABE31CACD825000CBC67 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9AE8ABE41CACD825000CBC67 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,7 @@
 		9A32DF6C1C979E2400BE0331 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				9AE8ABE21CACD825000CBC67 /* Reachability */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -415,6 +419,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		9AE8ABE21CACD825000CBC67 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9AE8ABE31CACD825000CBC67 /* Reachability.h */,
+				9AE8ABE41CACD825000CBC67 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		A11FD0B00386510C1E09740A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +507,7 @@
 				TargetAttributes = {
 					9AD21C401C87286F0003248A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CQA977E7GY;
 					};
 					9AD21C591C87286F0003248A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -622,6 +636,7 @@
 				9A533D5D1CA3C8C700B83825 /* BVSInputAlertView.m in Sources */,
 				04A66EDA1CAA5042005AF680 /* BVSContainerView.m in Sources */,
 				04A66ED41CAA502D005AF680 /* BVSKeepingBtnView.m in Sources */,
+				9AE8ABE51CACD825000CBC67 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
